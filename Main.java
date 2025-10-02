@@ -2,6 +2,7 @@ import java.lang.Math;
 import  java.util.Scanner; // класс над потоком ввода для забора данных
 
 public class Main {
+    public static int xx; // поле класса (значение по умолчанию)
     public static void main(String[] args) {
         int x;
         double f;
@@ -19,7 +20,7 @@ public class Main {
                 fhdajhfdsiufhudhcuuisa
                 fhdsaiufhduisfhishfh
                 hfdsaiudfhoiafhduoa
-                """; // ткстовый блок
+                """; // текстовый блок
         c='h'; // символ
         c='\t'; // управляющие последовательности воспринимаются как один символ
         c='\u0421'; // код символа в юникод
@@ -71,5 +72,21 @@ public class Main {
         else {
             System.out.println("Число нечётное");
         }
+        byte x1 = 50;
+        x1=(byte) (x1*2);
+
+        Integer x2 = new Integer(5) + new Integer(2); // Объект, который после инициализации уже не изменить
+
+        String str1 = "495";
+        int integ = Integer.parseInt(str1);
+        System.out.println(integ);
+
+        String binary = Integer.toBinaryString(integ);
+        System.out.println(binary);
+
+        Integer ii2 = 2; // работает режим автобоксигна, который 2 преобразует в объектный тип
+        int i2 = ii2; // работает автобоксинг, который под капотом преобразует объектный тип в простой
+
+        
     }
 }
